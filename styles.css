@@ -23,3 +23,34 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Responsive wrapping and scaling */
+.photo-collage {
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.photo-card {
+    flex: 0 1 300px;
+    min-width: 220px;
+    box-sizing: border-box;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 4px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover zoom effect */
+.photo-card:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Prevent layout shift during zoom */
+.photo-card {
+    overflow: hidden;
+}
