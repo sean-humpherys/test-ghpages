@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
+
+.photo-card {
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+.photo-collage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
